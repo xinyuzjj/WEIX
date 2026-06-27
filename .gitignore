@@ -1,0 +1,13 @@
+# Output
+output/
+
+# Config with secrets
+config.json
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
