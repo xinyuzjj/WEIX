@@ -1,4 +1,12 @@
-# 🚀 TrendForge
+<p align="center">
+  <img src="assets/weix-icon.png" width="200" alt="WEIX Logo">
+</p>
+
+<h1 align="center">WEIX</h1>
+
+<p align="center">
+  <strong>从 GitHub Trending 到全平台发布，一句话搞定。</strong>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/standard-AgentSkills.io-7c3aed?style=flat-square" alt="AgentSkills.io">
@@ -7,35 +15,41 @@
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
-<p align="center"><strong>From GitHub Trending → to Everywhere. Automatically.</strong></p>
-
 ---
 
-## 你只需要说一句话
+## 一句话就够了
 
 > "帮我把本周最火的开源项目写成文章发出去"
 
-剩下的，**TrendForge 全自动搞定**：
+剩下的，**WEIX 全自动搞定**：
 
 ```
 🔥 抓取 GitHub 本周最热项目
 🗄️ 资源自动存入百度网盘 + 夸克网盘，生成分享链接
-✍️  AI 撰写 3000-5000 字深度分析（刘润风格）
+✍️  AI 撰写 3000-5000 字深度分析
 📱 一键推送到微信公众号草稿箱
 🌐 自动同步到你的个人网站（GitHub + Cloudflare Pages）
-🐦 衍生 Twitter / LinkedIn / Newsletter 多版本内容
+🐦 衍生 Twitter / LinkedIn / Newsletter 多版本
 ```
 
 **从「发现热点」到「全平台发布」，6 步变 1 步。**
 
 ---
 
+## 为什么叫 WEIX
+
+**WE**（我们）+ **IX**（罗马数字 9，极致的象征）
+
+我们帮你把内容做到极致 — **WE do it, IX times better.**
+
+---
+
 ## 为什么你需要它
 
-| 没有 TrendForge | 有了 TrendForge |
+| 没有 WEIX | 有了 WEIX |
 |---|---|
 | 手动翻 GitHub Trending | 一条命令自动抓取 |
-| 下载源码、打包、手动上传网盘 | 自动上传双网盘+生成链接 |
+| 下载源码、打包、手动上传网盘 | 自动上传双网盘 + 生成链接 |
 | 憋 3 小时写不出文章 | AI 10 分钟生成初稿 |
 | 复制粘贴发微信还要排版 | 一次推送进草稿箱 |
 | 每个平台重新写一遍 | 一键衍生多平台版本 |
@@ -90,8 +104,8 @@
 
 ```bash
 # 1. 克隆
-git clone https://github.com/xinyuzjj/TrendForge.git
-cd TrendForge
+git clone https://github.com/xinyuzjj/WEIX.git
+cd WEIX
 
 # 2. 配置
 cp config.example.json config.json
@@ -117,27 +131,27 @@ output/2026-06-27/
 
 ### Hermes Agent
 ```bash
-git clone https://github.com/xinyuzjj/TrendForge.git ~/.hermes/skills/trendforge
+git clone https://github.com/xinyuzjj/WEIX.git ~/.hermes/skills/weix
 ```
 
 ### OpenClaw
 ```bash
-git clone https://github.com/xinyuzjj/TrendForge.git ~/.agents/skills/trendforge
+git clone https://github.com/xinyuzjj/WEIX.git ~/.agents/skills/weix
 ```
 
 ### WorkBuddy
 ```bash
-git clone https://github.com/xinyuzjj/TrendForge.git ~/.workbuddy/skills/trendforge
+git clone https://github.com/xinyuzjj/WEIX.git ~/.workbuddy/skills/weix
 ```
 
-安装后直接对 Agent 说：**"跑一下 TrendForge，抓本周热门"** 即可。
+安装后直接对 Agent 说：**"跑一下 WEIX，抓本周热门"** 即可。
 
 ---
 
 ## 六个模块，各司其职
 
 | 脚本 | 功能 | 可独立运行 |
-|------|------|-----------|
+|------|------|:----:|
 | `scripts/trending.py` | GitHub Trending 抓取 | ✅ |
 | `scripts/drives.py` | 百度网盘 + 夸克网盘上传分享 | ✅ |
 | `scripts/writer.py` | AI 深度文章生成 | ✅ |
@@ -147,21 +161,6 @@ git clone https://github.com/xinyuzjj/TrendForge.git ~/.workbuddy/skills/trendfo
 | `scripts/pipeline.py` | 编排器，串联全部流程 | — |
 
 每个模块都能**单独调用**，不需要完整管道也能用。
-
----
-
-## 真实案例
-
-我曾用它在一小时内完成：
-
-1. 发现 GitHub Trending #1 项目（一个 AI 代码审查工具）
-2. 自动上传项目资源到百度 + 夸克网盘
-3. 生成 3800 字深度分析文章（含使用教程、技术拆解、行业影响）
-4. 推到微信公众号草稿箱
-5. 同步到个人网站 `xyjunjunni.space`
-6. 衍生 3 条 Twitter 线程 + 1 篇 LinkedIn 文章
-
-**全程只需要我点了 3 次「确认」。**
 
 ---
 
@@ -190,5 +189,5 @@ MIT © [@xinyuzjj](https://github.com/xinyuzjj)
 ---
 
 <p align="center">
-  <sub>Made with ❤️ by developers, for developers.</sub>
+  <sub>WE do it, IX times better.</sub>
 </p>
