@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/weix-icon.png" width="200" alt="WEIX Logo">
+  <img src="assets/weix-logo.png" width="200" alt="WEIX Logo">
 </p>
 
 <h1 align="center">WEIX</h1>
