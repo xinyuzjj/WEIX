@@ -1,75 +1,19 @@
 {
-  "pipeline": {
-    "steps": ["trending", "store", "article", "publish", "sync", "distribute"],
-    "auto_publish": false,
-    "auto_sync": true,
-    "default_period": "weekly",
-    "default_limit": 5
-  },
-  "trending": {
+  "_comment": "Content Pipeline 配置文件 — 复制为 config.json 后填写",
+  
+  "WECHAT_APPID": "",
+  "WECHAT_SECRET": "",
+  
+  "GITHUB_REPO": "https://github.com/xinyuzjj/xyjunjunni.space",
+  
+  "BAIDU_CONFIG": "E:/workbuk/.bdpan_config/bdpan.yaml",
+  "QUARK_CONFIG": "E:/workbuk/.quark_config",
+  
+  "OUTPUT_DIR": "output",
+  
+  "DEFAULTS": {
     "period": "weekly",
-    "limit": 5,
-    "language": null,
-    "github_token": "",
-    "_comment": "Set GITHUB_TOKEN env var to increase API rate limit (60 req/hr without, 5000 with)"
-  },
-  "storage": {
-    "baidu": {
-      "enabled": true,
-      "remote_base": "/apps/bdpan/github-trending",
-      "config_path": "E:/workbuk/.bdpan_config"
-    },
-    "quark": {
-      "enabled": true,
-      "remote_base": "/GitHub热门",
-      "config_dir": "E:/workbuk/.quark_config",
-      "script_path": "scripts/quark_cli.py"
-    }
-  },
-  "article": {
-    "style": "liurun",
-    "min_words": 3000,
-    "max_words": 5000,
-    "include_resources": true,
-    "auto_cover": true,
-    "features": {
-      "liurun_style": true,
-      "case_studies": true,
-      "data_support": true,
-      "action_advice": true,
-      "no_hashtags": true,
-      "no_emoji_overuse": true
-    }
-  },
-  "wechat": {
-    "appid": "",
-    "secret": "",
-    "_comment": "Get from https://mp.weixin.qq.com/ → 开发 → 基本配置",
-    "target": "draft",
-    "_target_options": "draft = save to draft box, publish = publish directly (requires verified account)"
-  },
-  "website": {
-    "repo": "xyjunjunni.space",
-    "branch": "main",
-    "content_dir": "content/articles",
-    "auto_commit": false,
-    "auto_push": false,
-    "_comment": "Clone the website repo locally first, then set auto_commit=true"
-  },
-  "repurpose": {
-    "enabled_platforms": ["twitter", "linkedin", "newsletter"],
-    "voice": "professional-casual",
-    "twitter": {
-      "thread_length": 7,
-      "hook_style": "question"
-    },
-    "linkedin": {
-      "length": 1600,
-      "b2b_focus": true
-    },
-    "newsletter": {
-      "sections": 4,
-      "cta_style": "soft"
-    }
+    "limit": 3,
+    "language": "zh-CN"
   }
 }
