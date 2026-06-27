@@ -1,5 +1,5 @@
 ---
-name: content-pipeline
+name: trendforge
 description: >
   Full-stack content distribution pipeline. Fetches GitHub trending projects,
   stores resources to Baidu Drive + Quark Drive with share links, writes
